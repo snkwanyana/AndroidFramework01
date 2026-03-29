@@ -13,6 +13,7 @@ target/
 *.ipr
 screenshots/
 *.idea/vcs.xml
+Reports/
 
 ### Eclipse ###
 .apt_generated
