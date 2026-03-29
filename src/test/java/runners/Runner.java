@@ -2,6 +2,7 @@ package runners;
 
 import org.testng.annotations.Test;
 import utils.Base;
+import utils.Screenshots;
 
 public class Runner extends Base {
 
@@ -14,7 +15,9 @@ public class Runner extends Base {
     @Test
     public void homeScreenTest() {
         homeScreen.verifyHomeScreenDisplayed();
+        Screenshots.captureScreenshot(appiumDriverFactory.getDriver(), "homeScreenTest");
         homeScreen.clickHomeBurgerMenu();
+        Screenshots.captureScreenshot(appiumDriverFactory.getDriver(), "homeBurgerMenuClicked");
 
     }
 }

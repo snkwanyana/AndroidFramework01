@@ -15,7 +15,7 @@ public class Base {
     public HomeScreen homeScreen;
         public Base() throws FileNotFoundException {
             config = new Properties();
-            FileInputStream configFile = new FileInputStream("src/test/resources/properties/webApp.properties");
+            FileInputStream configFile = new FileInputStream("src/test/resources/properties/nativeAndroid.properties");
             try {
                 config.load(configFile);
             } catch (Exception e) {
